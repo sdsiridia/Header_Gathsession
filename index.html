@@ -2,11 +2,80 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Header Gathsession</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div class="container">
+      <header>
+        <figure><img src="./img/logo.svg" alt="logo compania" /></figure>
+        <nav>
+          <ul>
+            <li class="activo"">Home</li>
+            <li>Features</li>
+            <li>Blog</li>
+            <li>Contact</li>
+            <li>About Us</li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="hero">
+          <div class="hero__info">
+            <h1>Build your best community starting from here.</h1>
+            <p>
+              Meet and communicate with the best people to run projects, events
+              or other activities in a more effective and fun way
+            </p>
+            <div class="hero__btn">
+              <a href="#" class="btn btn-primary">Get Started</a>
+              <a href="#" class="btn">Get Started</a>
+              <figure><img src="./img/icon-arrow.svg" alt="flecha" /></figure>
+            </div>
+          </div>
+          <div class="hero__items">
+            <div class="hero__item">
+              <a href="#"
+                ><img src="./img/icon-build-community.svg" alt=""
+              /></a>
+              <p>Build Community</p>
+            </div>
+            <div class="hero__item">
+              <a href="#"><img src="./img/icon-share-events.svg" alt="" /></a>
+              <p>Share Events</p>
+            </div>
+            <div class="hero__item">
+              <a href="#"><img src="./img/icon-information.svg" alt="" /></a>
+              <p>Get Informations</p>
+            </div>
+          </div>
+        </section>
+        <section class="gallery">
+          <div class="card purple">
+            <img src="./img/man-1.png" alt="persona 1" />
+          </div>
+          <div class="card cyan">
+            <img src="./img/woman-1.png" alt="persona 2" />
+          </div>
+          <div class="card pink">
+            <img src="./img/woman-2.png" alt="persona 3" />
+          </div>
+          <div class="card orange">
+            <img src="./img/man-2.png" alt="persona 4" />
+          </div>
+          <div class="card yellow">
+            <img src="./img/woman-3.png" alt="persona 5" />
+          </div>
+        </section>
+      </main>
+    </div>
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>

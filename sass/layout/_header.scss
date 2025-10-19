@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as v;
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    li{
+        color:v.$gray-lighter;
+    }
+    .activo{
+        color:white;
+    }
+
+}
+h1{
+    font-size: 48px;
+    color:white
+}
