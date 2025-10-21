@@ -4,19 +4,45 @@
 
     margin-top: 80px;
 
-    h1 {
-        font-size: 64px;
+
+
+    &__info {
+        h1 {
+            font-size: 64px;
+            color: white;
+            font-family: v.$secondary-font;
+        }
+
+        p {
+            color: v.$gray-lighter;
+            font-family: v.$secondary-font;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-top: 20px;
+            max-width: 70%;
+        }
+
+    }
+
+    &__items {
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+
+
+    }
+
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 4px;
         color: white;
-        font-family: v.$secondary-font;
-    }
+        font-family: v.$primary-font;
+        font-weight: 300;
 
-    p {
-        color: v.$gray-lighter;
-        font-family: v.$secondary-font;
-        font-size: 18px;
-        line-height: 1.5;
-        margin-top: 20px;
-        max-width: 70%;
+        img {
+            margin-bottom: 10px;
+        }
     }
-
 }
