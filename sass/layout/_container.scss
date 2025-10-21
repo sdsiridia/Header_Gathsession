@@ -11,90 +11,73 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    .hero {
-        margin-top: 80px;
 
-        h1 {
-            font-size: 64px;
-            color: white;
-            font-family: v.$secondary-font;
-        }
 
-        p {
-            color: v.$gray-lighter;
-            font-family: v.$secondary-font;
-            font-size: 18px;
-            line-height: 1.5;
-            margin-top: 20px;
-            max-width: 70%;
-        }
-
-    }
+}
 
 
 
-    .gallery {
-        margin-top: 80px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        row-gap: 20px;
+.gallery {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 20px;
+    align-items: end;
+    column-gap: 30px;
+
+
+    div {
+        width: auto;
+        height: auto;
+        overflow: hidden;
+        display: flex;
         align-items: end;
-        column-gap: 30px;
 
 
-        div {
-            width: auto;
+        img {
+            width: 100%;
             height: auto;
-            overflow: hidden;
-            display: flex;
-            align-items: end;
-
-
-            img {
-                width: 100%;
-                height: auto;
-                object-fit: contain;
-            }
+            object-fit: contain;
         }
+    }
 
-        .purple {
-            grid-area: 1/1/ span 2/ span 1;
-            background-color: #6e1fed;
-            border-radius: 35% /17%;
+    .purple {
+        grid-area: 1/1/ span 2/ span 1;
+        background-color: #6e1fed;
+        border-radius: 35% /17%;
 
-
-        }
-
-        .pink {
-            grid-area: 3/1/span 1/ span 1;
-            background-color: #db2a6b;
-            border-radius: 37%;
-
-        }
-
-        .cyan {
-            grid-area: 1/2/span 1/ span 1;
-            background-color: #60d3d9;
-            border-radius: 37%;
-
-        }
-
-        .orange {
-            grid-area: 2/2 /span 2/ span 1;
-            background-color: #ff7e29;
-            border-radius: 35% /17%;
-
-        }
-
-        .yellow {
-            // grid-area: 2/3 /span 3 / span 3;
-            grid-column: 3 / span 1;
-            grid-row: 1 / span 3;
-            background-color: #f4b840;
-            border-radius: 35%/17%;
-            align-self: center;
-        }
 
     }
+
+    .pink {
+        grid-area: 3/1/span 1/ span 1;
+        background-color: #db2a6b;
+        border-radius: 37%;
+
+    }
+
+    .cyan {
+        grid-area: 1/2/span 1/ span 1;
+        background-color: #60d3d9;
+        border-radius: 37%;
+
+    }
+
+    .orange {
+        grid-area: 2/2 /span 2/ span 1;
+        background-color: #ff7e29;
+        border-radius: 35% /17%;
+
+    }
+
+    .yellow {
+        // grid-area: 2/3 /span 3 / span 3;
+        grid-column: 3 / span 1;
+        grid-row: 1 / span 3;
+        background-color: #f4b840;
+        border-radius: 35%/17%;
+        align-self: center;
+    }
+
 }
