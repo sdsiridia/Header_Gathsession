@@ -75,6 +75,11 @@ main {
         background-color: #f4b840;
         border-radius: 35%/17%;
         align-self: center;
+
+        img {
+
+            filter: drop-shadow(1px 1px 20px rgb(129, 116, 1));
+        }
     }
 
 }
