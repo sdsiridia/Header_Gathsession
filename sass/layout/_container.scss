@@ -5,6 +5,7 @@
     margin-right: auto;
     max-width: 1350px;
     box-sizing: border-box;
+
 }
 
 main {
@@ -23,6 +24,18 @@ main {
     align-items: end;
     column-gap: 30px;
 
+    &:has(.card:hover) .card:not(:hover) {
+        filter: blur(0.6px);
+        transform: scale(0.9);
+        transition: all 0.5s;
+    }
+
+    .card:hover {
+        filter: none;
+        transform: scale(1.50);
+        transition: all 0.5s;
+        z-index: 10;
+    }
 
     div {
         width: auto;
@@ -44,6 +57,17 @@ main {
         background-color: #6e1fed;
         border-radius: 35% /17%;
 
+        img {
+
+            filter: drop-shadow(1px 1px 20px rgb(252, 252, 252));
+        }
+
+        :hover {
+            transform: scale(1.05);
+            filter: drop-shadow(1px 1px 20px rgb(120, 40, 140)) grayscale(30%);
+            transition: all 0.3s ease-in-out;
+        }
+
 
     }
 
@@ -52,6 +76,18 @@ main {
         background-color: #db2a6b;
         border-radius: 37%;
 
+        img {
+
+            filter: drop-shadow(1px 1px 20px rgb(252, 252, 252));
+        }
+
+        :hover {
+            transform: scale(1.05);
+            filter: drop-shadow(1px 1px 20px rgb(117, 2, 88)) grayscale(30%);
+            transition: all 0.3s ease-in-out;
+
+        }
+
     }
 
     .cyan {
@@ -59,12 +95,34 @@ main {
         background-color: #60d3d9;
         border-radius: 37%;
 
+        img {
+
+            filter: drop-shadow(1px 1px 20px rgb(252, 252, 252));
+        }
+
+        :hover {
+            transform: scale(1.05);
+            filter: drop-shadow(1px 1px 20px rgb(1, 2, 73)) grayscale(30%);
+            transition: all 0.3s ease-in-out;
+        }
+
     }
 
     .orange {
         grid-area: 2/2 /span 2/ span 1;
         background-color: #ff7e29;
         border-radius: 35% /17%;
+
+        img {
+
+            filter: drop-shadow(1px 1px 20px rgb(252, 252, 252));
+        }
+
+        :hover {
+            transform: scale(1.05);
+            filter: drop-shadow(1px 1px 20px rgb(184, 73, 0)) grayscale(30%);
+            transition: all 0.3s ease-in-out;
+        }
 
     }
 
@@ -78,7 +136,13 @@ main {
 
         img {
 
-            filter: drop-shadow(1px 1px 20px rgb(129, 116, 1));
+            filter: drop-shadow(1px 1px 20px rgb(252, 252, 252));
+        }
+
+        :hover {
+            transform: scale(1.05);
+            filter: drop-shadow(1px 1px 20px rgb(73, 1, 1)) grayscale(30%);
+            transition: all 0.3s ease-in-out;
         }
     }
 

@@ -1,17 +1,21 @@
 @use "../abstracts/variables" as v;
 
-header{
+header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    li{
-        color:v.$gray-lighter;
+
+    li {
+        color: v.$gray-lighter;
+        font-family: v.$secondary-font;
     }
-    .activo{
-        color:white;
+
+    .activo {
+        color: white;
     }
 
 }
-h1{
+
+h1 {
     font-size: 48px;
-    color:white
+    color: white
 }
