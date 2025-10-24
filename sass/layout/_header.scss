@@ -4,14 +4,55 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
+    ul:hover a {
+        color: #888;
+    }
+
     li {
-        color: v.$gray-lighter;
-        font-family: v.$secondary-font;
+        position: relative;
+
+        a {
+            color: v.$gray-lighter;
+            font-family: v.$secondary-font;
+            text-decoration: none;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+
+        &::after {
+            content: '';
+            /* Necesario para que se muestre el pseudoelemento */
+            position: absolute;
+            bottom: 0;
+            left: 100%;
+            width: 0;
+            height: 2px;
+            /* Grosor de la línea */
+            background-color: v.$pink;
+            /* Color de la línea */
+            transition: all 0.3s ease;
+            /* Suaviza la animación */
+        }
+
+        &:hover::after {
+            left: 0;
+            width: 100%;
+        }
+
+
+
     }
 
     .activo {
         color: white;
     }
+
+
+
+
+
 
 }
 

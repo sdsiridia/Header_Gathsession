@@ -3,7 +3,8 @@
 .container {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1350px;
+    max-width: 1250px;
+
     box-sizing: border-box;
 
 }
@@ -11,8 +12,8 @@
 main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    max-height: 500px;
 }
-
 
 
 .gallery {
@@ -32,7 +33,7 @@ main {
 
     .card:hover {
         filter: none;
-        transform: scale(1.50);
+        transform: scale(1.30);
         transition: all 0.5s;
         z-index: 10;
     }
@@ -65,6 +66,7 @@ main {
         :hover {
             transform: scale(1.05);
             filter: drop-shadow(1px 1px 20px rgb(120, 40, 140)) grayscale(30%);
+            background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
             transition: all 0.3s ease-in-out;
         }
 
@@ -85,6 +87,7 @@ main {
             transform: scale(1.05);
             filter: drop-shadow(1px 1px 20px rgb(117, 2, 88)) grayscale(30%);
             transition: all 0.3s ease-in-out;
+            background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
 
         }
 
