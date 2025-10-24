@@ -66,7 +66,7 @@ main {
         :hover {
             transform: scale(1.05);
             filter: drop-shadow(1px 1px 20px rgb(120, 40, 140)) grayscale(30%);
-            background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+            background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
             transition: all 0.3s ease-in-out;
         }
 
@@ -106,6 +106,7 @@ main {
         :hover {
             transform: scale(1.05);
             filter: drop-shadow(1px 1px 20px rgb(1, 2, 73)) grayscale(30%);
+            background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
             transition: all 0.3s ease-in-out;
         }
 
@@ -124,6 +125,7 @@ main {
         :hover {
             transform: scale(1.05);
             filter: drop-shadow(1px 1px 20px rgb(184, 73, 0)) grayscale(30%);
+            background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
             transition: all 0.3s ease-in-out;
         }
 
@@ -145,6 +147,7 @@ main {
         :hover {
             transform: scale(1.05);
             filter: drop-shadow(1px 1px 20px rgb(73, 1, 1)) grayscale(30%);
+            background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
             transition: all 0.3s ease-in-out;
         }
     }
