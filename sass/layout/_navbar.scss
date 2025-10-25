@@ -5,3 +5,23 @@ nav ul{
     // text-decoration: none;
     list-style: none; 
 }
+
+.ellipse{
+    position: relative;
+    &__1{
+        position: absolute;
+        max-width: 70%;
+        right: -230px;
+        top: -300px;
+        z-index: -1;
+    }
+    &__2{
+        position: absolute;
+        z-index: -2;
+        max-width: 50%;
+        right: -130px;
+        top: -100px;
+        // max-width: 50%;
+        
+    }
+}
