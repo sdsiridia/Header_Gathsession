@@ -70,11 +70,27 @@
             font-family: v.$secondary-font;
             font-weight: 400;
 
-            &:first-of-type {
+            &:nth-child(1) {
                 text-decoration: none;
                 background-color: #db2a6b;
                 padding: 12px 50px;
                 border-radius: 8px 8px 8px 0px;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    background-color: white;
+                    color:#db2a6b;
+                    transform: scale(1.05);
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            &:nth-child(3) img{
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    transform: scale(1.1);
+                    rotate: 360deg ;
+                    transition: all 0.4s ease-in;
+                    color:#db2a6b;
+                }
             }
         }
     }
